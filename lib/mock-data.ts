@@ -1,9 +1,10 @@
-// Mock data — AgroPredict AI. Sin APIs reales.
+// Datos — AgroPredict AI. Las métricas se leen de datos.json (actualizado por el bot).
+import datos from "./datos.json";
 
 export const tickerItems = [
-  { label: "SOJA CBOT JUL-26", value: "385.20 USD/tn", delta: "+1.12%", up: true },
-  { label: "PIZARRA ROSARIO", value: "$382.500", delta: "+0.80%", up: true },
-  { label: "FAS TEÓRICO", value: "$390.000", delta: "—", up: true },
+  { label: "SOJA CBOT JUL-26", value: datos.chicago + " USD/tn", delta: datos.delta_chicago, up: true },
+  { label: "PIZARRA ROSARIO", value: datos.pizarra, delta: "—", up: true },
+  { label: "FAS TEÓRICO", value: datos.fas, delta: "—", up: true },
   { label: "MAÍZ CBOT", value: "182.40 USD/tn", delta: "-0.35%", up: false },
   { label: "TRIGO CBOT", value: "214.75 USD/tn", delta: "+0.22%", up: true },
   { label: "DÓLAR EXPORTADOR", value: "$1.470", delta: "+0.14%", up: true },
@@ -12,12 +13,12 @@ export const tickerItems = [
 ];
 
 export const metrics = [
-  { label: "Chicago Jul-26", value: "385.20", unit: "USD/tn", delta: "+1.12%", up: true, note: "Cierre CBOT" },
-  { label: "Pizarra Rosario", value: "$382.500", unit: "ARS/tn", delta: "+0.80%", up: true, note: "Cámara arbitral" },
-  { label: "FAS Teórico", value: "$390.000", unit: "ARS/tn", delta: "Brecha -1.9%", up: true, note: "Paridad de exportación" },
-  { label: "Probabilidad de suba", value: "68", unit: "%", delta: "7 días", up: true, note: "Modelo ensemble" },
-  { label: "Confianza", value: "Alta", unit: "", delta: "σ 0.42", up: true, note: "Dispersión del modelo" },
-  { label: "Sentimiento", value: "Alcista", unit: "", delta: "+2 drivers", up: true, note: "Chicago + clima" },
+  { label: "Chicago Jul-26", value: datos.chicago, unit: "USD/tn", delta: datos.delta_chicago, up: true, note: "Cierre CBOT · " + datos.actualizado },
+  { label: "Pizarra Rosario", value: datos.pizarra, unit: "", delta: "Cámara arbitral", up: true, note: "Precio local" },
+  { label: "FAS Teórico", value: datos.fas, unit: "ARS/tn", delta: "Paridad export.", up: true, note: "Capacidad de pago del exportador" },
+  { label: "Probabilidad de suba", value: datos.probabilidad, unit: "%", delta: "7 días", up: true, note: "Modelo fundamental" },
+  { label: "Confianza", value: datos.confianza, unit: "", delta: "Drivers", up: true, note: "Consistencia de señales" },
+  { label: "Sentimiento", value: datos.sentimiento, unit: "", delta: "Análisis", up: true, note: "Chicago + clima + noticias" },
 ];
 
 // 30 días de precio simulado (USD/tn) + banda de predicción
