@@ -1,10 +1,14 @@
 {
-  "chicago": "438.08",
+  "chicago": "437.53",
   "pizarra": "$475,600",
-  "fas": "$460,140",
-  "probabilidad": "60",
-  "confianza": "Media",
+  "fas": "$460,171",
+  "probabilidad": "80",
+  "confianza": "Alta",
   "sentimiento": "Alcista",
-  "delta_chicago": "+0.5%",
-  "actualizado": "06/07/2026 12:17"
+  "delta_chicago": "+5.2%",
+  "actualizado": "06/07/2026 17:00",
+  "oficial": "$1,512",
+  "blue": "$1,512",
+  "maiz": "180.40",
+  "trigo": "225.51"
 }
