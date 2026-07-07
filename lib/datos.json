@@ -1,19 +1,19 @@
 {
-  "chicago": "439.45",
+  "chicago": "439.27",
   "pizarra": "$475,600",
-  "fas": "$462,190",
+  "fas": "$462,001",
   "probabilidad": "44",
   "confianza": "Baja",
   "sentimiento": "Lateral",
-  "delta_chicago": "+5.7%",
-  "actualizado": "06/07/2026 22:52",
+  "delta_chicago": "+5.6%",
+  "actualizado": "06/07/2026 22:55",
   "oficial": "$1,512",
   "blue": "$1,512",
-  "maiz": "179.91",
+  "maiz": "180.01",
   "trigo": "224.41",
   "prob_suba": "32",
   "prob_lateral": "44",
   "prob_baja": "24",
-  "rango7_min": "427.3",
-  "rango7_max": "458.6"
+  "rango7_min": "427.2",
+  "rango7_max": "458.4"
 }
