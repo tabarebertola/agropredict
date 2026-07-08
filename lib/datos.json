@@ -6,14 +6,14 @@
   "confianza": "Baja",
   "sentimiento": "Lateral",
   "delta_chicago": "+0.3%",
-  "actualizado": "08/07/2026 08:27",
+  "actualizado": "08/07/2026 08:30",
   "oficial": "$1,513",
   "blue": "$1,515",
-  "maiz": "182.47",
-  "trigo": "228.64",
+  "maiz": "182.37",
+  "trigo": "228.82",
   "prob_suba": "32",
   "prob_lateral": "44",
   "prob_baja": "24",
-  "rango7_min": "427.5",
-  "rango7_max": "458.8"
+  "rango7_min": "428.8",
+  "rango7_max": "460.1"
 }
